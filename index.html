@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofoliu Fotografie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Galeria Foto</h1>
+        <p class="subtitle">Portofoliu fotografie</p>
+        <p id="bun-venit">Bine ai venit, <span id="nume-utilizator">Anonim</span></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Fotografiile mele</h2>
+
+            <div class="filtre">
+                <button class="btn-filtru active" data-categorie="toate">Toate</button>
+                <button class="btn-filtru" data-categorie="animale">Animale</button>
+                <button class="btn-filtru" data-categorie="peisaje">Peisaje</button>
+                <button class="btn-filtru" data-categorie="arta">Artă</button>
+            </div>
+
+            <div class="galerie">
+                <div class="card poza-galerie" data-categorie="peisaje">
+                    <img src="imagini/1.jpeg" alt="Peisaj 1">
+                    <div class="card-overlay"><span>Peisaje</span></div>
+                </div>
+                <div class="card poza-galerie" data-categorie="peisaje">
+                    <img src="imagini/2.jpeg" alt="Peisaj 2">
+                    <div class="card-overlay"><span>Peisaje</span></div>
+                </div>
+                <div class="card poza-galerie" data-categorie="animale">
+                    <img src="imagini/3.jpeg" alt="Animal 1">
+                    <div class="card-overlay"><span>Animale</span></div>
+                </div>
+                <div class="card poza-galerie" data-categorie="animale">
+                    <img src="imagini/4.jpeg" alt="Animal 2">
+                    <div class="card-overlay"><span>Animale</span></div>
+                </div>
+                <div class="card poza-galerie" data-categorie="arta">
+                    <img src="imagini/5.jpeg" alt="Artă 1">
+                    <div class="card-overlay"><span>Artă</span></div>
+                </div>
+                <div class="card poza-galerie" data-categorie="arta">
+                    <img src="imagini/6.jpeg" alt="Artă 2">
+                    <div class="card-overlay"><span>Artă</span></div>
+                </div>
+                <div class="card poza-galerie" data-categorie="peisaje">
+                    <img src="imagini/7.jpeg" alt="Peisaj 3">
+                    <div class="card-overlay"><span>Peisaje</span></div>
+                </div>
+                <div class="card poza-galerie" data-categorie="peisaje">
+                    <img src="imagini/8.jpeg" alt="Peisaj 4">
+                    <div class="card-overlay"><span>Peisaje</span></div>
+                </div>
+                <div class="card poza-galerie" data-categorie="peisaje">
+                    <img src="imagini/9.jpeg" alt="Peisaj 5">
+                    <div class="card-overlay"><span>Peisaje</span></div>
+                </div>
+                <div class="card poza-galerie" data-categorie="animale">
+                    <img src="imagini/10.jpeg" alt="Animal 3">
+                    <div class="card-overlay"><span>Animale</span></div>
+                </div>
+            </div>
+            <section class="sectiune-recenzii">
+    <h2>Activitate Recenzii</h2>
+    <div id="lista-recenzii" class="tabel-recenzii">
+        <p class="mesaj-gol">Încă nu sunt recenzii. Fii primul care evaluează o poză!</p>
+    </div>
+</section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Portofoliu Fotografie. Toate drepturile rezervate.</p>
+        <p>Contact: <a href="mailto:negoiasa.gabriela@yahoo.com">negoiasa.gabriela@yahoo.com</a></p>
+    </footer>
+
+    <div id="modal-imagine" class="modal">
+        <span class="inchide">&times;</span>
+        <div class="modal-interior">
+            <img class="modal-continut" id="imagine-marita" alt="Imagine mărită">
+            <div class="sectiune-rating">
+                <p>Cum ți se pare fotografia?</p>
+                <div class="stele">
+                    <span class="stea" data-valoare="1">&#9733;</span>
+                    <span class="stea" data-valoare="2">&#9733;</span>
+                    <span class="stea" data-valoare="3">&#9733;</span>
+                    <span class="stea" data-valoare="4">&#9733;</span>
+                    <span class="stea" data-valoare="5">&#9733;</span>
+                </div>
+                <p id="mesaj-multumire">Nota ta: <span id="nota-acordata">0</span>/5</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
