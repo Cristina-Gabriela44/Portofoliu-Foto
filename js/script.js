@@ -116,7 +116,6 @@ function salveazaRecenzie(nume, poza, nota) {
     .then(data => {
         console.log("Răspuns server:", data);
         if (data.includes("Succes")) {
-            // Aici era eroarea, am schimbat din afiseazaRecenziePeEcran în adaugaRecenzie
             adaugaRecenzie(nume, poza, nota);
         } else {
             console.error("Serverul a returnat o eroare:", data);
