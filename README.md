@@ -1,28 +1,32 @@
-Proiectul meu: Galerie Foto cu Rating
+Project: Photo Gallery with Rating System
+I built this project to learn how to connect a website’s front-end design with a back-end database. It is a photo gallery where users can view images and rate their favorites.
 
-Buna ziua! Acesta este un proiect pe care l-am facut ca sa invat cum functioneaza legatura dintre un site (partea de design) si o baza de date (unde salvam informatiile). Este o galerie foto unde poti sa dai note pozelor tale preferate.
+Features:
+Lightbox View: Click on any image to view it at full size.
 
--Ce face site-ul?
+Category Filtering: Easily filter photos by category (Landscapes, Portraits, etc.).
 
-1.Poti vedea pozele la dimensiune mare daca dai click pe ele.
-2.Poti sa le filtrezi pe categorii (peisaje, portrete etc.).
-3.Cel mai important: poti lasa o nota de la 1 la 5 stele.
-*Notele nu dispar la refresh pentru ca se salveaza direct in baza de date MySQL prin PHP.*
+Persistent Rating System: Users can leave a rating from 1 to 5 stars. Ratings are saved in a MySQL database via PHP, so they don’t disappear when the page is refreshed.
 
--Ce am folosit:
+Tech Stack:
+HTML & CSS: Used for structure and layout (implemented Flexbox for a clean, responsive design).
 
-1.HTML & CSS: Pentru structura si design (am folosit Flexbox ca sa fie totul aliniat).
-2.JavaScript: Pentru partea de interactivitate si pentru a trimite notele la server fara sa se reincarce pagina (Fetch API).
-3.PHP: Ca sa fac legatura cu baza de date.
-4.MySQL: Unde am creat tabelul pentru stocarea notelor.
+JavaScript: Handles interactivity and uses the Fetch API to send ratings to the server without reloading the page.
 
--Cum il pornesti la tine pe PC:
+PHP: Acts as the bridge between the front-end and the database.
 
-Daca vrei sa testezi proiectul meu local, urmeaza pasii astia:
-1.Descarca fisierele si pune-le in folderul htdocs din XAMPP.
-2.Deschide XAMPP Control Panel si porneste Apache si MySQL.
-3.Mergi in browser la localhost/phpmyadmin si fa o baza de date noua numita galerie_foto.
-Importa sau ruleaza codul de mai jos in tab-ul SQL ca sa faci tabelul:
+MySQL: Stores all rating data in a dedicated table.
+
+How to Run Locally:
+If you want to test this project on your PC, follow these steps:
+
+Download the files and move them into the htdocs folder within your XAMPP directory.
+
+Open the XAMPP Control Panel and start both Apache and MySQL.
+
+Go to your browser and navigate to localhost/phpmyadmin to create a new database named galerie_foto.
+
+Import or run the SQL code below in the SQL tab to create the necessary table:
 
 CREATE TABLE recenzii (
     id INT AUTO_INCREMENT PRIMARY KEY,
